@@ -1,0 +1,49 @@
+*{
+	text-align:center;
+	font-size:5vw;
+	font-family:'Arial';
+	
+}
+
+@keyframes anime{
+	0%	{background-image:linear-gradient(to right,pink,yellow);}
+	25%	{background-image:linear-gradient(to right,lightblue,purple);}
+	50%	{background-image:linear-gradient(to right,red,orange);}
+	75% {background-image:linear-gradient(to right,blue,tomato);}
+	100% {background-image:linear-gradient(to right, green,orange);}
+}
+
+@keyframes blink{
+	0% {opacity:1.0;}
+	50% {opacity:0.0;}
+	100% {opacity:1.0;}
+}
+
+body{
+	animation-name:anime;
+	animation-iteration-count:infinite;
+	animation-duration:2.5s;
+	animation-direction:alternate-reverse;
+	animation-timing-function:ease-in-out;
+}
+
+span{
+	font-size:3vw;
+	color:red;
+	text-decoration:none;
+	background-color:yellow;
+}
+
+span.title{
+	animation-name:blink;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	animation-duration:1s;
+}
+
+span.notes{
+	font-size:3vw;
+	text-align:left;
+	background-color:transparent;
+	color:black;
+}

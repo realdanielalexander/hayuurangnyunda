@@ -1,0 +1,111 @@
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+	background-image:linear-gradient(to right,#000,#fff);
+}
+
+div.header{
+	text-align:center;
+	padding:10px;
+	font-size:500%;
+	color:blue;
+	margin:10px;
+	font-family:'BeforeRain';
+}
+
+div.menu{
+	width:90%;
+	margin:auto;
+	position:relative;
+	background-image:url('../Multimedia/Images/Backgrounds/menuAngklungInteractive.jpg');
+	background-size:cover;
+	background-repeat:repeat;
+	background-position:0 -200px;
+	height:300px;
+	display:flex;
+	flex-wrap:wrap;
+	border-radius:45px;
+	font-family:'Arial';
+}
+
+div.changeColor{
+	display:inline-block;
+	padding:10px;
+	margin:auto;
+	width:45%;
+	background-color:rgba(255, 187, 153,0.4);
+	text-align:center;
+}
+
+div.iframeContainer{
+	width:80%;
+	height:40vw;
+	margin:auto;
+	margin-top:5%;
+	border:1px solid black;
+}
+
+
+div.instrument{
+	background-color:white;
+	border:1px solid black;
+	width:90%;
+	margin:auto;
+	margin-top:3%;
+	background-image:url('../Multimedia/Images/Backgrounds/bamboo.jpg');
+	background-size:cover;
+	background-repeat:repeat
+}
+
+div.container{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+div.gallery{
+	width:10%;
+	float:left;
+	margin:2%;
+}
+
+div.gallery img{
+	width:100%;
+	transform:rotate(15deg);
+	transition:all 1s;
+	height:auto;
+}
+.desc{
+	padding:2%;
+	text-align:center;
+	color:white;
+	background-color:brown;
+}
+
+.gallery:hover{
+	cursor:pointer;
+}
+
+.gallery:hover img{
+	transform:rotate(-15deg);
+}
+
+.gallery:hover .desc{
+	background-color: #99ff66;
+	color:black;
+}
+iframe{
+	width:100%;
+	height:100%;
+}
+
+td{
+	width:10vw;
+	font-size:110%;
+}
+

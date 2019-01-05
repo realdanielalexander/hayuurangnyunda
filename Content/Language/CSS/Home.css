@@ -1,0 +1,477 @@
+html {
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding:0;
+	border:0;
+	font-family:Monsterrat;
+}
+
+
+#titleScroll {
+	z-index: -99;
+	top: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	transition: 1s ease-in-out;
+}
+
+#titleScroll a img {
+	z-index: -99;
+	width: 250px;
+}
+
+#titleScroll > a {
+	z-index: -99;
+	height: 200px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleScroll .titleContent {
+	z-index: -99;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  background-color: #222222;
+}
+
+.stick {
+	display: inline;
+}
+.small {
+	height: 100px;
+	max-height: 50px;
+}
+
+.disappear {
+	display: none;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*																					 Title 																						*/
+
+.diff{
+	font-family:BeforeRain;
+	color: #b38600;
+	font-weight:bold;
+}
+
+#one{
+	text-align:center;
+	font-size:2em;
+	color:white;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: url('../multimedia/images/backgrounds/tarian2trans.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+  	background-color: #2196F3;
+}
+
+#title {
+	position: fixed;
+	top: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	transition: 1s ease-in-out;
+}
+
+
+.titleContent {
+	width: 100%;
+	max-width: 400px;
+	height: 200px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#title a img {
+	width: 250px;
+}
+
+#title > a {
+	height: 200px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+	min-width: 70%;
+	font-size: .5em;
+	font-family: Montserrat;
+	text-decoration: none;
+	width: 60%;
+	text-align: center;
+	padding: 3% 0;
+	background-color: rgb(0,0,0,0);
+	letter-spacing: 5px;
+	border: 3px solid #cc9900;
+	color: #cc9900;
+	transition: .5s;
+	font-weight: bold;
+}
+
+.details:hover {
+	cursor: pointer;
+	background-color: #cc9900;
+	color: white;
+}
+
+#quote {
+	display: flex;
+	width: 33%;
+	text-align:left;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-left: 8%;
+	margin-top: 5%;
+	padding: 2%;
+	border-left: 3px solid #cc9900;
+}
+
+
+
+/*Burger*/
+
+#burger-container{
+	position: relative;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    z-index: 99999999;
+    align-items: center;
+}
+
+#burger{
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+#burger span{
+    background: #eee;
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.4s;
+}
+
+#burger-container.open #burger span:nth-child(2),
+#burger-container.open #burger span:nth-child(3){
+    width: 0;
+    opacity: 0;
+}
+
+#burger-container.open #burger span:nth-child(4){
+    transform: rotate(45deg);
+    top: -12px;
+}
+
+#burger-container.open #burger span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 12px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*																					 Footer 																						*/
+div.footer{
+	padding:2%;
+	background-color:black;
+	z-index:99;
+}
+
+div.footerLogo{
+	width:10%;
+	display:inline-block;
+	margin-right:20%;
+	
+}
+
+div.footerCopyright{
+	width:20%;
+	display:inline-block;
+	font-size:1vw;
+	color:white;
+	margin-right:20%;
+	border-left:2px solid white;
+}
+
+div.footerMedsos{
+	width:20%;
+	display:inline-block;
+	border-left:2px solid white;
+}
+
+.footerPC{
+	width:100%;
+}
+
+.flogo{
+	width:15%;
+	margin-right:15%;
+	transition:all 1s;
+}
+
+.flogo:hover{
+	transform:scale(1.5);
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+div.slideshow{
+
+	margin-top:3%;
+	background-color:rgba(255,255,255,0.0);
+	margin-bottom:3%;
+	margin-left:12%;
+}
+
+div.content{
+	background-color:;
+	font-size:100%;
+}
+
+/*			
+
+																		 Search Box 	 																				*/
+#searchIcon{
+	width:30px;
+}
+
+#searchBox{
+	font-size: .5em;
+	font-family: Montserrat;
+	margin-right:1%;
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/*																					 navigation 																					*/
+.logo{
+	border: 3px solid #cc9900;;
+	width:70%;
+	transition:all 1s;
+	opacity: 1.0;
+}
+
+.text{
+	font-size: 2em;
+	transition:all 1s;
+	position:0 100%;
+	opacity:1.0;
+	color: white;
+}
+	/*PC*/
+div.navbar{
+	background-color: rgba(0,0,0,0.5);
+	padding-left: 20%;
+	padding-right: 30%;
+	margin-top: 200px;
+	z-index: 999999999999;
+	position: absolute;
+}
+
+.navbar img{
+	display:block;
+}
+
+.navbar ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 500px;
+}
+
+.navbar ul li{
+	float:left;
+	margin-right:1%;
+}
+
+.navbar ul li a{
+	padding:2%;
+	display:block;
+	text-decoration:none;
+}
+
+
+.navbar ul li a:hover .logo{
+	transform:translate(0,-100%);
+	opacity:0.0;
+}
+
+.navbar ul li a:hover .text{
+	transform:translate(0,-200%);
+	opacity:1.0;
+}
+
+	/*iPad*/
+div.containeriPad{
+	position:fixed;
+	bottom:0;
+}
+div.naviPad{
+	width:100%;
+	background-color:rgb(100,100,100);
+	display:flex;
+	flex-wrap:wrap;
+}	
+
+div.division{
+	width:5%;
+	display:inline;
+	margin-right:10%;
+	margin-left:10%;
+	padding-top:2%;
+}
+
+.division:hover .logo{
+		transform:translate(0,-100%);
+		opacity:0.0;
+}
+
+.division:hover .text{
+	transform:translate(0,-200%);
+	opacity:1.0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*																	RESPONSIVE																			*/
+
+@media only screen and (min-width: 961px){
+	body{
+		padding:0;
+		margin:0;
+	}
+	
+	.containeriPad{
+		display:none;
+	}
+	
+	.content{
+		width:90%;
+		margin-left:10%;
+		margin-bottom:5%;
+	}
+	
+	#searchContainer{
+		width:90%;
+		margin-left:10%;
+		margin-bottom:2%;
+		margin-top:5%;
+	}
+	.slideshow{
+		width:90%;
+		margin-left:10%;
+	}
+	
+	.title img{
+		width:200px;
+	}
+}
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	body{
+		margin:0;
+		padding:0;
+	}
+	.navbar{
+		display:none;
+	}
+	
+	.containeriPad{
+		display:block;
+	}
+	
+	.footer{
+		display:none;
+	}
+	.content{
+		width:100%;
+		margin-left:0%;
+		margin-bottom:11%;
+	}
+	
+	#searchContainer{
+		width:100%;
+		margin-left:0;
+		margin-bottom:4%;
+	}
+	.slideshow{
+		width:100%;
+		margin-left:0%;
+	}
+	
+	.title img{
+		width:200px;
+	}
+}
+
+@media only screen and (max-width:400px){
+	body{
+		margin:0;
+		padding:0;
+	}
+	.navbar{
+		display:none;
+	}
+	
+	.containeriPad{
+		display:block;
+	}
+	
+	.footer{
+		display:none;
+	}
+	.slideshow{
+		display:none;
+	}
+	.content{
+		width:100%;
+		margin-left:0%;
+		margin-top:10%;
+		margin-bottom:15%;
+	}
+	
+	#searchContainer{
+		margin-top:1%;
+		margin-bottom:1%;
+	}
+	.slideshow{
+		width:100%;
+		margin-left:0%;
+	}
+	
+	.title img{
+		width:200px;
+	}
+}
