@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Angklung Interactive Game</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hanjaya">
+	<meta name="description" content="playing angklung interactively with user">
+	<meta name="keywords" content="angklung, game ,interactive">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="CSS Font/fonts.css">
+	<link rel="stylesheet" href="../CSS/AngklungInteractiveGameStyle.css">
+	
+	<!--jQuery-->
+	<script src="../Library/jquery-3.3.1.js"></script>
+	<script src="../Library/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../Library/jquery-ui.css">
+	
+	<script>
+		$(function(){
+			$("#resizeMe").resizable(); 
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		Angklung Interactive Game
+	</div>
+	<div class="menu">
+		<div class="changeColor">
+			Change Background Color
+			<br>
+			<br>
+			<table style="margin:auto">
+				<tr>
+					<td>Color 1</td>
+					<td>Color 2</td>
+				</tr>
+				
+				<tr>
+					<td><input type="color" id="color1" value="#ff0000"></td>
+					<td><input type="color" id="color2" value="#00ff00"></td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			Choose Music :
+			<br>
+			<br>
+			<form>
+				<select name="music" id="mySelect">
+					<option value="defaultiFrame">HOW TO PLAY</option>
+					<optgroup label="National Music">
+						<option value="Garudapancasila">Garuda pancasila</option>
+						<option value="IbuKitaKartini">Ibu kita Kartini</option>
+						<option value="mengheningkanCipta">Mengheningkan Cipta</option>
+						<option value="Syukur">Syukur</option>
+					</optgroup>
+					<optgroup label="Regional Music (Sundanese)">
+						<option value="BubuyBulan">Bubuy Bulan</option>
+						<option value="Cingcangkeling">Cing Cangkeling</option>
+						<option value="Eslilin">Es Lilin</option>
+						<option value="manukDadali">Manuk Dadali</option>
+						<option value="Tokecang">Tokecang</option>
+					</optgroup>
+					<optgroup label="World Music">
+						<option value="Healtheworld">Heal The World</option>
+						<option value="Photograph">Photograph</option>
+					</optgroup>
+				</select>
+			</form>
+		</div>
+		
+	</div>
+	
+	<div class="iframeContainer" id="resizeMe">
+		<iframe id="frame" name="myFrame" src="frames/defaultiFrame.html" >
+		
+		</iframe>
+	</div>
+	
+	<div class="instrument">
+		<div class="container">
+			<div class="gallery" onclick="pushed('normal','1')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">1</div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('normal','2')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">2</div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('normal','3')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">3</div>
+			</div>
+			<div class="gallery" onclick="pushed('normal','4')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">4</div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('normal','5')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">5</div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('normal','6')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">6</div>
+			</div>
+			<div class="gallery" onclick="pushed('normal','7')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">7</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="gallery" onclick="pushed('rendah','1')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">1<</div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('rendah','2')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">2<</div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('rendah','3')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">3<</div>
+			</div>
+			<div class="gallery" onclick="pushed('rendah','4')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">4<</div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('rendah','5')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">5<</div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('rendah','6')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">6<</div>
+			</div>
+			<div class="gallery" onclick="pushed('rendah','7')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">7<</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="gallery" onclick="pushed('tinggi','1')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">1></div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('tinggi','2')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">2></div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('tinggi','3')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">3></div>
+			</div>
+			<div class="gallery" onclick="pushed('tinggi','4')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">4></div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('tinggi','5')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">5></div>
+			</div>
+			
+			<div class="gallery" onclick="pushed('tinggi','6')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">6></div>
+			</div>
+			<div class="gallery" onclick="pushed('tinggi','7')">
+				<img src="../Multimedia/Images/Pictures/angklung.png">
+				<div class="desc">7></div>
+			</div>
+		</div>
+	</div>
+	<audio id="myRadio" autoplay="autoplay">
+		<source id="musicSource" src="" type="audio/mp3">
+	</audio>
+	<script src="../JavaScript/AngklungInteractiveGame.js"></script>
+</body>
+</html>

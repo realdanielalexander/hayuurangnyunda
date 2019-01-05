@@ -1,0 +1,33 @@
+body{
+	padding:0;
+	margin:0;
+	font-family:'Arial';
+	background-color:rgba(213,106,43,0.4);
+}
+
+h1{
+	text-align:center;
+	text-decoration:underline;
+	font-size:4.8vw;
+}
+
+div.notes{
+	text-align:center;
+	font-weight:bold;
+	font-size:4.2vw;
+
+}
+
+span{
+	color:red;
+}
+
+span.over{
+	color:black;
+	text-decoration:overline;
+}
+
+span.reff{
+	color:blue;
+	font-style:italic;
+}
